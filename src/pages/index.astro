@@ -9,12 +9,13 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import { getPermalink } from '~/utils/permalinks';
 
-const metadata = {
-  title: 'Ved Chadderwala',
-};
+// const metadata = {
+//   title: 'Ved Chadderwala',
+//   description: "Ved Chadderwala",
+// };
 ---
 
-<Layout metadata={metadata}>
+<Layout>
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
@@ -110,7 +111,7 @@ const metadata = {
     items={[
       {
         title:
-          'Sofware Engineering Intern <br /> <span class="font-normal">Google, India</span> <br /> <span class="text-sm font-normal">May 2024 - July 2024</span>',
+          'Software Engineering Intern <br /> <span class="font-normal">Google, India</span> <br /> <span class="text-sm font-normal">May 2024 - July 2024</span>',
         description: `Tech Stack: Android Programming, Java, High-level System Design, Concurrency <br /> Worked on the Android PDF project in the domain of text selection. <br /> Designed multiple solutions for the problem statement and documented the same with their pros and cons to 
 collaborate efficiently with different stakeholders. <br /> Experimented with the mentioned approaches and implemented the most optimal solution based on the derived 
 data.`,

@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Ved Chadderwala
-    template: '%s — AstroWind'
+    # template: '%s — AstroWind'
   description: "Ved Chadderwala"
   robots:
     index: true
