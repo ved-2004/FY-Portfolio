@@ -2,7 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import Header from '~/components/widgets/Header.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
   title: 'Connect',
@@ -15,10 +14,9 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#'},
-        { text: 'Resume', href: '#resume' },
-        { text: 'Projects', href: '#porfolio' },
-        { text: 'Blog', href: '#blog' },
+        { text: 'Home', href: '/'},
+        { text: 'Resume', href: 'https://drive.google.com/file/d/1q0TBGaq_PMBm6LocwnpsN9_urdUbFNEk/view?usp=sharing' },
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/ved-chadderwala-196529223/' },
         { text: 'Github', href: 'https://github.com/ved-2004' },
       ]}
       isSticky
@@ -29,7 +27,6 @@ const metadata = {
   <ContactUs
     id="form"
     title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
     inputs={[
       {
         type: 'text',
@@ -49,12 +46,11 @@ const metadata = {
       label:
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
-    description="Our support team typically responds within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="We are here to help!"
     items={[
       {
@@ -87,5 +83,5 @@ const metadata = {
         icon: 'tabler:map-pin',
       },
     ]}
-  />
+  /> -->
 </Layout>
