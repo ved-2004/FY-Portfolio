@@ -71,7 +71,7 @@ export const adaptOpenGraphImages = async (
           };
         }
 
-        let _image;
+        let _image: Record<string, () => Promise<unknown>> | undefined = undefined;
 
         if (
           typeof resolvedImage === 'string' &&
