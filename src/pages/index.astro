@@ -22,13 +22,12 @@ import { getPermalink } from '~/utils/permalinks';
       links={[
         { text: 'Experience', href: '#resume' },
         { text: 'Projects', href: '#porfolio' },
-        // { text: 'Blog', href: '#blog' },
         { text: 'Github', href: 'https://github.com/ved-2004' },
         { text: 'Resume', href: 'https://drive.google.com/file/d/1q0TBGaq_PMBm6LocwnpsN9_urdUbFNEk/view?usp=sharing'}
       ]}
       actions={[
         {
-          text: 'Hire me',
+          text: 'Let\'s Connect',
           href: '/contact#form',
         },
       ]}
@@ -42,7 +41,7 @@ import { getPermalink } from '~/utils/permalinks';
   <Hero
     id="hero"
     title="Ved Chadderwala"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    actions={[{ variant: 'primary', text: 'Let\'s Connect', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
       I'm a Software Developer passionate about solving real problems. Currently in my final year at SVNIT Surat pursuing Bachelor of Technology in Computer Science and Engineering.
@@ -76,7 +75,7 @@ import { getPermalink } from '~/utils/permalinks';
         callToAction: {
           target: '_blank',
           text: 'Instagram',
-          href: '#',
+          href: 'https://www.instagram.com/vedchadderwala/',
         },
       },
     ]}
@@ -373,12 +372,12 @@ Places, Geocoding, and Geolocator to build an enhanced user experience around th
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    title="Let's develop together"
+    subtitle="Ready to transform ideas into innovative, widely accessible solutions?"
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
+        text: 'Collaborate with me',
         href: '/contact#form',
       },
     ]}
