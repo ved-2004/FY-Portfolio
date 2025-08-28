@@ -7,6 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 ---
@@ -19,7 +20,7 @@ import { getPermalink } from '~/utils/permalinks';
         { text: 'Experience', href: '#resume' },
         { text: 'Projects', href: '#porfolio' },
         { text: 'Github', href: 'https://github.com/ved-2004' },
-        { text: 'Resume', href: 'https://drive.google.com/file/d/1q0TBGaq_PMBm6LocwnpsN9_urdUbFNEk/view?usp=sharing'}
+        { text: 'Resume', href: 'https://drive.google.com/file/d/1JSecRlQrrg_odjLPyDsnmOrPs1Giil-W/view?usp=sharing'}
       ]}
       actions={[
         {
@@ -101,14 +102,19 @@ import { getPermalink } from '~/utils/permalinks';
 
   <Steps
     id="resume"
-    title="Work experience"
+    title="Professional experience"
     items={[
       {
         title:
+          'Software Engineering Intern <br /> <span class="font-normal">Zanskar Research LLP, India</span> <br /> <span class="text-sm font-normal">Jan 2025 - May 2025</span>',
+        description: `<b>Tech Stack: Go, PostgreSQL, TimeScaleDB, Redis, Docker, Elastic Search</b> <br />Spearheaded the redesign of core data models and APIs to build an exchange-agnostic instrument ID system, resolving ~80% NSE/BSE ID collisions and catalyzing seamless multi-exchange trading <br /> Developed a high-performance search backend in ElasticSearch, working with frontend teams to integrate advanced filters and ranking logic, cutting query latency from 60 ms to 14 ms while handling large concurrent traffic <br /> Architected a secure authentication gateway leveraging JWT and Redis, coordinating with web/mobile teams to align API contracts, adding two-step OTP + PIN verification and scaling secure session management`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
           'Software Engineering Intern <br /> <span class="font-normal">Google, India</span> <br /> <span class="text-sm font-normal">May 2024 - July 2024</span>',
-        description: `Tech Stack: Android Programming, Java, High-level System Design, Concurrency <br /> Worked on the Android PDF project in the domain of text selection. <br /> Designed multiple solutions for the problem statement and documented the same with their pros and cons to 
-collaborate efficiently with different stakeholders. <br /> Experimented with the mentioned approaches and implemented the most optimal solution based on the derived 
-data.`,
+        description: `<b>Tech Stack: Android SDK, Java, System Design, Concurrency, Java Testing</b> <br /> Implemented coordinate-based page detection for PDF text selection enabling robust multi-page selection across variable-size docs; deployed to Android and used by 4B+ devices <br /> Remodeled the architecture with a Document-level design and ConcurrentHashMap-based state management to overcome single-page limits, implementing observer patterns for concurrent UI sync across multiple PDF pages <br /> Worked alongside 5+ senior engineers to evaluate multiple technical approaches for cross-page text selection, creating 
+comprehensive technical documentation influencing architectural decisions for millions of Android users`,
         icon: 'tabler:briefcase',
       },
       {
@@ -131,8 +137,14 @@ Places, Geocoding, and Geolocator to build an enhanced user experience around th
     title="Education"
     items={[
       {
-        title: `Bachelor of Technology in Computer Science and Engineering <br /> <span class="font-normal">Sardar Vallabhbhai National Institute of Technology</span> <br /> <span class="text-sm font-normal">2021 - 2025</span>`,
+        title: `Master of Science in Computer Science <br /> <span class="font-normal">University of Southern California</span> <br /> <span class="text-sm font-normal">Aug 2025 - May 2027</span>`,
         icon: 'tabler:school',
+        description: `Relevant Courses: Analysis of Algorithms, Database Systems`
+      },
+      {
+        title: `Bachelor of Technology in Computer Science and Engineering <br /> <span class="font-normal">Sardar Vallabhbhai National Institute of Technology</span> <br /> <span class="text-sm font-normal">Dec 2021 - Jun 2025</span>`,
+        icon: 'tabler:school',
+        description: `GPA: 8.88/10.0 <br />Relevant Courses: Data Structures, Analysis of Algorithms, Artificial Intelligence, Machine Learning, Natural Language Processing, Data Science, Big Data Analytics, Microprocessor and Interfacing Techniques, Operating Systems, Computer Networks`
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
@@ -303,66 +315,30 @@ Places, Geocoding, and Geolocator to build an enhanced user experience around th
 
   <!-- Testimonials Widget *********** -->
 
-  <!-- <Testimonials
-    title="Client testimonials"
-    subtitle="Discover what clients have to say about their experiences working with me."
+  <Testimonials
+    title="Testimonials"
+    subtitle="Discover what my colleagues have to say about their experiences working with me."
     testimonials={[
       {
-        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
-        name: 'Mark Thompson',
-        job: 'Creative director',
+        testimonial: `I had the pleasure of working with Ved during their internship at Google. They demonstrated a strong eagerness to learn and quickly adapted to new tasks. Their communication skills were noteworthy, as they consistently articulated their ideas and progress clearly, which greatly facilitated team collaboration. <br />I can say that Ved will excel in any future role they pursue, as they have shown the capability during their time with us.`,
+        name: 'Pratyush',
+        job: 'Software Engineer at Google',
         image: {
-          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Mark Thompson Image',
+          src: 'https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg',
+          alt: 'Default Image',
         },
       },
       {
-        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
-        name: 'Emily Martinez',
-        job: 'CEO',
+        testimonial: `Ved is a hard working engineer and has a eager to learn attitude. I have worked with him during his internship and can say that he will be a valuable asset to any team he joins. All the best for your future!`,
+        name: 'Bhavya Jain',
+        job: 'Tech Lead at Google',
         image: {
-          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
-          alt: 'Emily Martinez Image',
-        },
-      },
-      {
-        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
-        name: 'Laura Simmons',
-        job: 'Founder of an NGO',
-        image: {
-          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Laura Simmons Image',
-        },
-      },
-      {
-        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
-        name: 'Alex Foster',
-        job: 'Director of web services',
-        image: {
-          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Alex Foster Image',
-        },
-      },
-      {
-        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
-        name: 'Jessica Collins',
-        job: 'Product Manager',
-        image: {
-          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
-          alt: 'Jessica Collins Image',
-        },
-      },
-      {
-        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
-        name: 'Michael Carter',
-        job: 'Event Coordinator',
-        image: {
-          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Michael Carter Image',
+          src: 'https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg',
+          alt: 'Default Image',
         },
       },
     ]}
-  /> -->
+  />
 
   <!-- CallToAction Widget *********** -->
 
